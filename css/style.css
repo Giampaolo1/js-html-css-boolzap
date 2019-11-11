@@ -9,6 +9,7 @@
 /* font */
 body {
   font-family: 'Roboto', sans-serif;
+  overflow: hidden;
 }
 
 /* DEBUG:  */
@@ -22,6 +23,10 @@ section {
 
 main {
   border: solid yellow;
+}
+
+.avatar {
+  width: 10%;
 }
 
 /* bloccone di pagina */
@@ -41,10 +46,12 @@ main {
 
 .stato {
   height: 60px;
+  background-color: #EEEEEE;
 }
 
 .notifiche {
   height: 60px;
+  background-color: #9DE1FE;
 }
 
 .searchbar {
@@ -72,11 +79,13 @@ main {
 
 .utenteselezionatotop {
   height: 60px;
+  background-color: #EEEEEE;
 }
 
 .mainmessaggi {
   height: calc(100% - 120px);
   overflow: auto;
+  background-image: url("img/sfondochat.jpg");
 }
 
 .typemsg {
