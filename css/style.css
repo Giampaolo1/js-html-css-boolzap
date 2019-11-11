@@ -39,11 +39,27 @@ main {
   height: 100%;
 }
 
+.stato {
+  height: 60px;
+}
+
+.notifiche {
+  height: 60px;
+}
+
+.searchbar {
+  height: 60px;
+}
+
 .navlaterale {
   /* display: flex;
   flex-direction: column; */
-  height: auto;
+  height: calc(100% - 180px);
   overflow: auto;
+}
+
+.utentelaterale {
+  height: 60px;
 }
 
 /* BLOCCONE RIGHT *//* IDEA:  *//* IDEA:  */
@@ -54,12 +70,17 @@ main {
   /* display: flex; */
 }
 
+.utenteselezionatotop {
+  height: 60px;
+}
+
 .mainmessaggi {
-  height: auto;
+  height: calc(100% - 120px);
   overflow: auto;
 }
 
 .typemsg {
   /* display: flex;
   justify-content: flex-end; */
+  height: 60px;
 }
