@@ -10,3 +10,56 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+/* DEBUG:  */
+div {
+  border: solid 1px;
+}
+
+section {
+  border: solid red;
+}
+
+main {
+  border: solid yellow;
+}
+
+/* bloccone di pagina */
+
+.blocconedipagina {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* bloccone left */
+
+.blocconeleft {
+  width: 40%;
+  height: 100%;
+}
+
+.navlaterale {
+  /* display: flex;
+  flex-direction: column; */
+  height: auto;
+  overflow: auto;
+}
+
+/* BLOCCONE RIGHT *//* IDEA:  *//* IDEA:  */
+
+.blocconeright {
+  width: 60%;
+  height: 100%;
+  /* display: flex; */
+}
+
+.mainmessaggi {
+  height: auto;
+  overflow: auto;
+}
+
+.typemsg {
+  /* display: flex;
+  justify-content: flex-end; */
+}
