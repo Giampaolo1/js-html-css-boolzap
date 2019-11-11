@@ -50,7 +50,16 @@ main {
   background-color: #EEEEEE;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+
+.icona.prima {
+  margin-left: 250px;
+}
+
+.icona {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .notifiche {
@@ -58,15 +67,27 @@ main {
   background-color: #9DE1FE;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  padding-left: 20px;
 }
 
-.bell {
-  margin-left: 20px;
+.textnotifiche {
+  margin-left: 15px;
 }
 
 .searchbar {
   height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+  background-color: #EEEEEE;
+}
+#barraricerca{
+  width: 80%;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 100px;
 }
 
 .navlaterale {
@@ -80,7 +101,12 @@ main {
   height: 60px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+
+.nome {
+  margin-left: 15px;
+  font-size: 16px;
 }
 
 /* BLOCCONE RIGHT *//* IDEA:  *//* IDEA:  */
@@ -96,7 +122,7 @@ main {
   background-color: #EEEEEE;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .avatartop {
@@ -107,11 +133,20 @@ main {
 .mainmessaggi {
   height: calc(100% - 120px);
   overflow: auto;
-  background-image: url("//img/sfondochat.jpg");
+  background-image: url("../img/sfondochat.jpg");
 }
 
 .typemsg {
   /* display: flex;
   justify-content: flex-end; */
   height: 60px;
+  background-color: #EEEEEE;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.microphone {
+  margin-left: 20px;
 }
