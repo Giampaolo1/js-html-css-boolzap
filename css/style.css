@@ -27,6 +27,7 @@ main {
 
 .avatar {
   width: 10%;
+  margin-left: 10px;
 }
 
 /* bloccone di pagina */
@@ -47,11 +48,21 @@ main {
 .stato {
   height: 60px;
   background-color: #EEEEEE;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .notifiche {
   height: 60px;
   background-color: #9DE1FE;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bell {
+  margin-left: 20px;
 }
 
 .searchbar {
@@ -67,6 +78,9 @@ main {
 
 .utentelaterale {
   height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* BLOCCONE RIGHT *//* IDEA:  *//* IDEA:  */
@@ -80,12 +94,20 @@ main {
 .utenteselezionatotop {
   height: 60px;
   background-color: #EEEEEE;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatartop {
+  width: 7%;
+  margin-left: 10px;
 }
 
 .mainmessaggi {
   height: calc(100% - 120px);
   overflow: auto;
-  background-image: url("img/sfondochat.jpg");
+  background-image: url("//img/sfondochat.jpg");
 }
 
 .typemsg {
