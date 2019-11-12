@@ -27,16 +27,24 @@
         <!-- STATO -->
         <section>
           <div class="stato">
-            <img class="avatar" src="img/avatar2.png" alt="avatar">
-            <a href="#"> <img class="icona prima" src="img/svg/icon-webwhatsapp(1).svg"> </a>
-            <a href="#"> <img class="icona" src="img/svg/icon-webwhatsapp(2).svg"> </a>
-            <a href="#"> <img class="icona" src="img/svg/icon-webwhatsapp(3).svg"> </a>
+            <div>
+              <img class="avatar" src="img/avatar2.png" alt="avatar">
+            </div>
+            <div>
+              <a href="#"> <img class="icona prima" src="img/svg/icon-webwhatsapp(1).svg"> </a>
+              <a href="#"> <img class="icona" src="img/svg/icon-webwhatsapp(2).svg"> </a>
+              <a href="#"> <img class="icona" src="img/svg/icon-webwhatsapp(3).svg"> </a>
+            </div>
           </div>
           <!-- NOTIFICHE -->
           <div class="notifiche">
-            <a href="#"> <i class="fas fa-bell-slash bell"></i> </a>
-            <span class="textnotifiche">Ricevi notifiche di nuovi messaggi</span> <br>
-            <a href="#"> <span class="textnotifiche2">Attiva notifiche desktop <i class="fas fa-chevron-right"></i> </span> </a>
+            <div>
+              <a href="#"> <i class="bell fas fa-bell-slash"></i> </a>
+            </div>
+            <div class="textnotifiche">
+              <span>Ricevi notifiche di nuovi messaggi</span>
+              <a href="#"> <span>Attiva notifiche desktop <i class="fas fa-chevron-right"></i> </span> </a>
+            </div>
           </div>
           <!-- SEARCHBAR -->
           <div class="searchbar">
@@ -44,12 +52,20 @@
             <input class="barraricerca" type="text" placeholder="   Cerca o inizia una nuova chat">
           </div>
         </section>
-        <!-- parte nav messaggi -->
+
+        <!-- PARTE NAV MESSAGGI -->
         <section class="navlaterale">
             <!-- ute1 -->
             <div class="utentelaterale selected">
-              <img class="avatar" src="img/avatar.png" alt="avatar">
-              <span class="nome">Mario</span>
+              <div class="fotoute">
+                <img class="avatar" src="img/avatar.png" alt="avatar">
+              </div>
+              <div class="nomeute">
+                <span>Mario</span>
+              </div>
+              <div class="orarioute">
+                <span>10:10</span>
+              </div>
             </div>
             <!-- ute2 -->
             <div class="utentelaterale">
@@ -81,7 +97,7 @@
         <section class="typemsg">
           <a href="#"> <img class="icona" src="img/svg/icon-webwhatsapp(20).svg"> </a>
           <input class="message" type="text" placeholder="   Scrivi un messaggio">
-          <button class="sendmsg" type="button" name="button">Invia</button>
+          <a href="#"> <i class="fab fa-telegram-plane sendmsg"></i> </a>
         </section>
 
 

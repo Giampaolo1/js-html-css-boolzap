@@ -81,10 +81,9 @@ main {
 
 .textnotifiche {
   margin-left: 15px;
-}
+  display: flex;
+  flex-direction: column;
 
-.textnotifiche2 {
-  margin-left: 15px;
 }
 
 .searchbar {
@@ -115,10 +114,15 @@ main {
   align-items: center;
   justify-content: flex-start;
 }
+/* UTENTE LATERALE */
+.fotoute{
 
-.nome {
-  margin-left: 15px;
-  font-size: 16px;
+}
+.nomeute {
+  font-size: 18px;
+}
+.orarioute {
+
 }
 
 .selected {
