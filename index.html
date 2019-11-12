@@ -30,15 +30,15 @@
             <div>
               <img class="avatar" src="img/avatar2.png" alt="avatar">
             </div>
-            <div>
-              <a href="#"> <img class="icona prima" src="img/svg/icon-webwhatsapp(1).svg"> </a>
+            <div class="iconcine">
+              <a href="#"> <img class="icona" src="img/svg/icon-webwhatsapp(1).svg"> </a>
               <a href="#"> <img class="icona" src="img/svg/icon-webwhatsapp(2).svg"> </a>
               <a href="#"> <img class="icona" src="img/svg/icon-webwhatsapp(3).svg"> </a>
             </div>
           </div>
           <!-- NOTIFICHE -->
           <div class="notifiche">
-            <div>
+            <div class="belldiv">
               <a href="#"> <i class="bell fas fa-bell-slash"></i> </a>
             </div>
             <div class="textnotifiche">
@@ -61,16 +61,26 @@
                 <img class="avatar" src="img/avatar.png" alt="avatar">
               </div>
               <div class="nomeute">
-                <span>Mario</span>
+                <span>Mario</span><br>
+                <span class="lastmsg">Ciao Ciao</span>
               </div>
               <div class="orarioute">
-                <span>10:10</span>
+                <span class="lastmsg">10:10</span>
               </div>
             </div>
+
             <!-- ute2 -->
             <div class="utentelaterale">
-              <img class="avatar" src="img/avatar3.png" alt="avatar">
-              <span class="nome">Luigi</span>
+              <div class="fotoute">
+                <img class="avatar" src="img/avatar3.png" alt="avatar">
+              </div>
+              <div class="nomeute">
+                <span>Luigi</span><br>
+                <span class="lastmsg">Bla bla</span>
+              </div>
+              <div class="orarioute">
+                <span class="lastmsg">09:10</span>
+              </div>
             </div>
 
         </section>
@@ -83,11 +93,18 @@
       <!-- BLOCCONE RIGHT -->
       <div class="blocconeright">
         <section class="utenteselezionatotop">
-          <img class="avatartop" src="img/avatar.png" alt="avatar">
-          <span class="nome">Mario</span>
-          <a href="#"> <img class="icona prima2" src="img/svg/icon-webwhatsapp(12).svg"> </a>
-          <a href="#"> <img class="icona" src="img/svg/icon-webwhatsapp(13).svg"> </a>
-          <a href="#"> <img class="icona" src="img/svg/icon-webwhatsapp(3).svg"> </a>
+          <div>
+            <img class="avatar" src="img/avatar.png" alt="avatar">
+          </div>
+          <div class="nomeute">
+            <span>Mario</span><br>
+            <span class="lastmsg">Ultimo accesso oggi alle 10:10</span>
+          </div>
+          <div class="iconcine">
+            <a href="#"> <img class="icona" src="img/svg/icon-webwhatsapp(12).svg"> </a>
+            <a href="#"> <img class="icona" src="img/svg/icon-webwhatsapp(13).svg"> </a>
+            <a href="#"> <img class="icona" src="img/svg/icon-webwhatsapp(3).svg"> </a>
+          </div>
         </section>
 
         <main class="mainmessaggi">
@@ -95,9 +112,15 @@
 
         <!-- blocco type msg -->
         <section class="typemsg">
-          <a href="#"> <img class="icona" src="img/svg/icon-webwhatsapp(20).svg"> </a>
-          <input class="message" type="text" placeholder="   Scrivi un messaggio">
-          <a href="#"> <i class="fab fa-telegram-plane sendmsg"></i> </a>
+          <div>
+            <a href="#"> <img class="icona" src="img/svg/icon-webwhatsapp(20).svg"> </a>
+          </div>
+          <div class="messagediv">
+            <input class="message" type="text" placeholder="   Scrivi un messaggio">
+          </div>
+          <div>
+            <a href="#"> <i class="fab fa-telegram-plane sendmsg"></i> </a>
+          </div>
         </section>
 
 
@@ -110,7 +133,11 @@
 
     <!-- BLOCCO DI TEMPLATE non visibile in pagina -->
     <div id="template">
-      <div class='msgsent'>
+      <div class="containermessaggi">
+        <div class='msgsent'>
+        </div>
+        <div class="msgreceived">
+        </div>
       </div>
     </div>
 
