@@ -13,12 +13,12 @@ body {
 }
 
 /* DEBUG:  */
-div {
+/* div {
   border: solid 1px;
-}
+} */
 
 section {
-  border: solid red;
+  border: solid 1px red;
 }
 
 main {
@@ -198,14 +198,27 @@ main {
   display: flex;
 }
 
-.msgsent {
-  background-color: #DCF8C6;
-  width: 50%;
+.msg {
+  max-width: 50%;
   padding: 5px;
   border-radius: 5px;
   margin-top: 10px;
   justify-content: flex-end;
+}
 
+.send {
+  justify-content: flex-end;
+}
+.send > .msg {
+  background-color: #DCF8C6;
+}
+
+.received {
+  justify-content: flex-start;
+
+}
+.received > .msg {
+  background-color: #eee;
 }
 
 .msgreceived {

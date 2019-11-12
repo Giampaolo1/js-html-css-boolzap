@@ -19,12 +19,14 @@ $( document ).ready(function() {
 
     // tecnica di TEMPLATE
     // cloniamo (facciamo una copia) del div con classe msgsent che sta dentro un div con id template
-    var elementmsg = $("#template .msgsent").clone();
+    var elementmsg = $("#template .containermessaggi").clone();
     console.log(elementmsg);
+    //Aggiungo la classe send per formattare il messaggio
+    elementmsg.addClass('send');
     // modifica questa copia di msgsent aggiungendogli il testo del messaggio:
-    var elementmsgtxt = elementmsg.text(messaggio);
+    elementmsg.find('.msg').text(messaggio);
     // appendiamo una copia con testo valorizzato del div msgsent
-    $(".mainmessaggi").append(elementmsgtxt);
+    $(".mainmessaggi").append(elementmsg);
 
     // miglior user experience, ripuliamo il contenuto riga x scrivere
     $(".message").val("");
