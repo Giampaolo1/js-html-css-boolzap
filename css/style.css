@@ -180,8 +180,9 @@ main {
   border-radius: 100px;
 }
 
-.invio {
+.sendmsg {
   margin-left: 20px;
+  font-size: 20px;
 }
 
 /* JS and JQ:  */
