@@ -54,7 +54,7 @@ main {
 }
 
 .icona.prima {
-  margin-left: 250px;
+  margin-left: 350px;
 }
 
 .icona {
@@ -83,7 +83,7 @@ main {
   padding-left: 20px;
   background-color: #EEEEEE;
 }
-#barraricerca{
+.barraricerca {
   width: 80%;
   height: 30px;
   margin-left: 10px;
@@ -147,6 +147,26 @@ main {
   padding-left: 20px;
 }
 
-.microphone {
+.message {
+  width: 80%;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 100px;
+}
+
+.invio {
   margin-left: 20px;
+}
+
+/* JS and JQ:  */
+.msgsent {
+  background-color: #DCF8C6;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* PARTE DI TEMPLATING:  */
+#template {
+  display: none;
 }

@@ -5,6 +5,33 @@
 
 $( document ).ready(function() {
 
+  // fx di callback sul buttone
+  $(".sendmsg").click(function(){
+
+    // Ci salviano il volore dell input inserito dall utente
+    var messaggio = $(".message").val();
+    // console.log(messaggio);
+
+    // $(".mainmessaggi").append(
+    //   // passare il messaggio all interno del riquadro
+    //   "<div class='msgsent'>" + messaggio + "</div>"
+    // );
+
+    // tecnica di TEMPLATE
+    // cloniamo (facciamo una copia) del div con classe msgsent che sta dentro un div con id template
+    var elementmsg = $("#template .msgsent").clone();
+    console.log(elementmsg);
+    // modifica questa copia di msgsent aggiungendogli il testo del messaggio:
+    var elementmsgtxt = elementmsg.text(messaggio);
+    // appendiamo una copia con testo valorizzato del div msgsent
+    $(".mainmessaggi").append(elementmsgtxt);
+
+    // miglior user experience, ripuliamo il contenuto riga x scrivere
+    $(".message").val("");
+
+
+  });
+
 
 
 

@@ -26,7 +26,7 @@
         <!-- Parte fissa -->
         <section>
           <div class="stato">
-            <img class="avatar" src="img/avatar.png" alt="avatar">
+            <img class="avatar" src="img/avatar2.png" alt="avatar">
             <i class="fas fa-circle-notch icona prima"></i>
             <i class="fas fa-envelope-open-text icona"></i>
             <i class="fas fa-ellipsis-v icona"></i>
@@ -37,7 +37,7 @@
           </div>
           <div class="searchbar">
             <i class="fas fa-search lente"></i>
-            <input id="barraricerca" type="text" placeholder="   Cerca o inizia una nuova chat">
+            <input class="barraricerca" type="text" placeholder="   Cerca o inizia una nuova chat">
           </div>
         </section>
         <!-- parte nav messaggi -->
@@ -63,12 +63,12 @@
           <i class="fas fa-ellipsis-v icona"></i>
         </section>
         <main class="mainmessaggi">
-            Messaggi
+
         </main>
         <section class="typemsg">
           <i class="far fa-smile"></i>
-          <input id="barraricerca" type="text" placeholder="   Scrivi un messaggio">
-          <i class="fas fa-microphone microphone"></i>
+          <input class="message" type="text" placeholder="   Scrivi un messaggio">
+          <button class="sendmsg" type="button" name="button">Invia</button>
         </section>
 
 
@@ -77,6 +77,12 @@
 
 
     <!-- fine bloccone di pagina -->
+    </div>
+
+    <!-- BLOCCO DI TEMPLATE non visibile in pagina -->
+    <div id="template">
+      <div class='msgsent'>
+      </div>
     </div>
 
 
