@@ -33,12 +33,16 @@ $( document ).ready(function() {
 
     // RISPOSTA AUTOMATICA DEL PC
     var elementmsg = $("#template .containermessaggi").clone();
-    //Aggiungo la classe received per formattare il messaggio
-    elementmsg.addClass('received');
-    // modifica questa copia di msgsent aggiungendogli il testo del messaggio:
-    elementmsg.find('.msg').text(messaggio);
-    // appendiamo una copia con testo valorizzato del div msgsent
-    $(".mainmessaggi").append(elementmsg);
+
+    // Diamo timeout di 1 sec tutto nella funzione
+    setTimeout(function () {
+      //Aggiungo la classe received per formattare il messaggio
+      elementmsg.addClass('received');
+      // modifica questa copia di msgreceived aggiungendogli "Ciao":
+      elementmsg.find('.msg').text("Ok");
+      // appendiamo una copia con testo valorizzato del div msgreceived
+      $(".mainmessaggi").append(elementmsg);
+    }, 1000);
 
 
 
