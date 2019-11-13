@@ -44,6 +44,31 @@ $( document ).ready(function() {
       $(".mainmessaggi").append(elementmsg);
     }, 1000);
 
+    // funzione che Cerca
+    // https://api.jquery.com/jquery.each/
+
+    // inserisco il keyup per dare controllo al mouse senza tastiera
+
+    $(".barraricerca").keyup(function(event){
+
+      // mi creo una var e gli do il case insensitive
+      var cercaNome=$(this).val().toLowerCase();
+
+      // usa each per ciclare e trovare
+      $(".nomeute").each(function(){
+      // crea una var per il nome cercato
+        var nomeCercato=$(this).find("span").text().toLowerCase();
+        // crea la condizione if se lo trova
+          if (nomeCercato.includes(carcaNome)){
+            $(this).show();
+          } else {
+            $(this).hide();
+          }
+      });
+    });
+
+
+
 
 
 
