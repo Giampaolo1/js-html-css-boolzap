@@ -13,7 +13,7 @@ body {
 }
 
 /* DEBUG:  */
-div {
+/* div {
   border: solid 1px;
 }
 section {
@@ -21,7 +21,7 @@ section {
 }
 main {
   border: solid yellow;
-}
+} */
 
 
 .avatar {
@@ -200,6 +200,7 @@ main {
 .containermessaggi{
   width: 100%;
   display: flex;
+  word-wrap: break-word;
 }
 
 .msg {
