@@ -16,14 +16,12 @@ body {
 /* div {
   border: solid 1px;
 } */
-
-section {
+/* section {
   border: solid 1px red;
 }
-
 main {
   border: solid yellow;
-}
+} */
 
 .avatar {
   width: 50px;
@@ -41,7 +39,7 @@ main {
 /* bloccone left */
 
 .blocconeleft {
-  width: 40%;
+  width: 35%;
   height: 100%;
 }
 
@@ -51,6 +49,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-right: 1px solid lightgrey;
 }
 .iconcine {
   display: flex;
@@ -65,7 +64,7 @@ main {
 /* NOTIFICATIONS */
 
 .notifiche {
-  height: 60px;
+  height: 70px;
   background-color: #9DE1FE;
   display: flex;
   align-items: center;
@@ -74,8 +73,9 @@ main {
 }
 
 .bell {
-  font-size: 25px;
+  font-size: 18px;
   color: #9DE1FE;
+  padding: 12px;
 }
 .belldiv {
   background-color: white;
@@ -90,12 +90,12 @@ main {
 }
 
 .searchbar {
-  height: 60px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   padding-left: 20px;
-  background-color: #EEEEEE;
+  background-color: #eaf6f9;
 }
 .barraricerca {
   width: 80%;
@@ -116,6 +116,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: solid 1px lightgrey;
 }
 /* UTENTE LATERALE */
 .fotoute{
@@ -141,7 +142,7 @@ main {
 /* BLOCCONE RIGHT *//* IDEA:  *//* IDEA:  */
 
 .blocconeright {
-  width: 60%;
+  width: 65%;
   height: 100%;
   /* display: flex; */
 }
@@ -161,6 +162,7 @@ main {
 .mainmessaggi {
   height: calc(100% - 120px);
   overflow: auto;
+  /* overflow-x: hidden; */
   background-image: url("../img/sfondochat.jpg");
 }
 
@@ -174,6 +176,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  border-left: solid 1px lightgrey;
 }
 
 .messagediv {

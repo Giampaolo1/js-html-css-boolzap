@@ -31,8 +31,28 @@ $( document ).ready(function() {
     // miglior user experience, ripuliamo il contenuto riga x scrivere
     $(".message").val("");
 
+    // RISPOSTA AUTOMATICA DEL PC
+    var elementmsg = $("#template .containermessaggi").clone();
+    //Aggiungo la classe received per formattare il messaggio
+    elementmsg.addClass('received');
+    // modifica questa copia di msgsent aggiungendogli il testo del messaggio:
+    elementmsg.find('.msg').text(messaggio);
+    // appendiamo una copia con testo valorizzato del div msgsent
+    $(".mainmessaggi").append(elementmsg);
+
+
+
+
+
 
   });
+
+//   // Milestone 2
+
+// Risposta dall’interlocutore: ad ogni inserimento di un messaggio, l’utente riceverà un “ok” come risposta,
+// che apparirà dopo 1 secondo.
+
+// Ricerca utenti: scrivendo qualcosa nell’input a sinistra, vengono visualizzati solo i contatti il cui nome contiene le lettere inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono solo Marco e Martina)
 
 
 
