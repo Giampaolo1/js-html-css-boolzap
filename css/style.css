@@ -144,6 +144,7 @@ main {
  margin-right: 10px;
 }
 
+/* Selezionatore grigetto */
 .selected {
   background-color: #EEEEEE;
 }
@@ -174,6 +175,7 @@ main {
   /* overflow-x: hidden; */
   background-image: url("../img/sfondochat.jpg");
 }
+
 
 /* TYPE MSG */
 

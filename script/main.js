@@ -98,6 +98,7 @@ $( document ).ready(function() {
 // Scelgo la chat a sinistra e seleziono solo quella cliccata
 
 $(".utentelaterale").click(function() {
+
       $(".utentelaterale").removeClass("selected")
       $(this).addClass("selected")
 
@@ -119,7 +120,12 @@ $(".utentelaterale").click(function() {
       $('.avatarTop').attr('src', srcImmagine);
 
       // Se scrivo un msg, sarà inserito in quella chat e quella solamente;
-
+      // al click su selected
+      // var srcUtentelaterale = $('.mainmessaggi').attr('src');
+      // $('.mainmessaggi').attr('data-ref', clickedUtentelaterale);
+      // $(".mainmessaggi.selected").removeClass("selected")
+      // $("main[data-ref=" + clickedUtentelaterale +"]").addClass("selected");
+      // $('.mainmessaggi .selected').attr('src', srcUtentelaterale);
 
 
 
