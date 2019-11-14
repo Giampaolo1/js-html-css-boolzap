@@ -82,21 +82,29 @@ $( document ).ready(function() {
 
 // Scelgo la chat a sinistra
 
-$(".utentelaterale").click(function () {
+$(".utentelaterale").click(function() {
       $(".utentelaterale").removeClass("selected")
       $(this).addClass("selected")
-      // $(".utenteselezionatotop").hide()
-    });
+
+// provo a cambiare il nome on top
+
+      var prova = $(".selected .nomeutespec").text();
+      // console.log(prova);
+      $(".nomeutespectop").hide();
+    
+
+});
 
    // trovare un modo per rendere dinamico il div con classe .utenteselezionatotop
    // che ad ogni click cambia
 
-$(".utentelaterale").click(changeTab);
+// $(".utentelaterale").click(changeTab);
+//
+// function changeTab (){
+//   var posizioneTab = $(".utenteselezionatotop img.active");
+//   posizioneTab.removeClass("active");
+// }
 
-function changeTab (){
-  var posizioneTab = $(".utenteselezionatotop img.active");
-  posizioneTab.removeClass("active");
-}
 
 
 
