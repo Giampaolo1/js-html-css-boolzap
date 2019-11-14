@@ -115,7 +115,7 @@ $(".utentelaterale").click(function() {
 
       var srcImmagine = $('.avatarTop').attr('src'); //Ottengo l'src dell'immagine
       console.log(srcImmagine); //Fai console.log per capire cosa restituisce ;)
-      $('.avatar4').attr('src', srcImmagine); //Setto l'src su un'altra immagine :)
+      $('.avatar').attr('src', srcImmagine); //Setto l'src su un'altra immagine :)
 
 
 
