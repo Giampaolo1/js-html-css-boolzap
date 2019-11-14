@@ -31,6 +31,10 @@ $( document ).ready(function() {
     // miglior user experience, ripuliamo il contenuto riga x scrivere
     $(".message").val("");
 
+
+    // MILESTONE 2 // IDEA: // IDEA: // IDEA: // IDEA:
+
+
     // RISPOSTA AUTOMATICA DEL PC
     var elementmsg = $("#template .containermessaggi").clone();
 
@@ -44,37 +48,54 @@ $( document ).ready(function() {
       $(".mainmessaggi").append(elementmsg);
     }, 1000);
 
-    // funzione che Cerca
-    // https://api.jquery.com/jquery.each/
-
-    // inserisco il keyup per dare controllo al mouse senza tastiera
-
-    $(".barraricerca").keyup(function(event){
-
-      // mi creo una var e gli do il case insensitive
-      var cercaNome=$(this).val().toLowerCase();
-
-      // usa each per ciclare e trovare
-      $(".nomeute").each(function(){
-      // crea una var per il nome cercato
-        var nomeCercato=$(this).find("span").text().toLowerCase();
-        // crea la condizione if se lo trova
-          if (nomeCercato.includes(carcaNome)){
-            $(this).show();
-          } else {
-            $(this).hide();
-          }
-      });
-    });
-
-
-
-
-
-
-
-
   });
+
+  // funzione che Cerca, FILTRO
+  // https://api.jquery.com/jquery.each/
+
+  // inserisco il keyup cosi al rilascio del bottone parte la ricerca
+
+  $(".barraricerca").keyup(function(event){
+
+    // mi creo una var e gli do il case insensitive (Portando tutto in minuscolo)
+    var cercaNome = $(this).val().toLowerCase();
+
+    // usa each per ciclare e trovare
+    $(".utentelaterale").each(function(){
+
+    // crea una var per il nome cercato
+      var nomeCercato = $(this).find(".nomeutespec").text().toLowerCase();
+
+      // crea la condizione if se lo trova
+        if (nomeCercato.includes(cercaNome)){
+          $(this).show();
+        } else {
+          $(this).hide();
+        }
+  });
+});
+
+
+// MILESTONE 3
+// sullo step 1 sarà da lasciare selezionato il contatto, la chat cambia, e cambiano anche le info dell’header della chat, e se scrivo un msg, sarà inserito in quella chat e quella solamente;
+// step 2, bisogna tenere conto che dovrò gestire eventi su elementi inseriti dinamicamente, quindi dovrò affidarmi all’event delegation: https://learn.jquery.com/events/event-delegation/, e poi facile ci sia anche la questione di risalire al padre da cancellare rispetto all’elemento interno che ha dato il comando di delete;
+
+// Scelgo la chat a sinistra
+
+$(".utentelaterale").click(function () {
+      $(".utentelaterale").removeClass("selected")
+      $(this).addClass("selected")
+      $(".utenteselezionatotop").hide()
+   });
+
+
+
+
+
+
+
+
+
 
 //   // Milestone 2
 
