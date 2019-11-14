@@ -89,9 +89,13 @@ $(".utentelaterale").click(function() {
 // provo a cambiare il nome on top
 
       var prova = $(".selected .nomeutespec").text();
+      var prova2 = $(".selected .oraMsg").text();
+
       // console.log(prova);
-      $(".nomeutespectop").hide();
-    
+      // $(".nomeutespectop").hide();
+      $(".nomeutespectop").text(prova)
+      $(".oraMsgTop").text(prova2)
+
 
 });
 
