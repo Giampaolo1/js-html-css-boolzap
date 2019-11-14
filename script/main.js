@@ -111,11 +111,14 @@ $(".utentelaterale").click(function() {
       $(".nomeutespectop").text(cambioNome)
       $(".oraMsgTop").text(cambioOrario)
 
-      // cambiare l immagineda on TOP
+      // cambiare l immagine on TOP
 
-      var srcImmagine = $('.avatarTop').attr('src'); //Ottengo l'src dell'immagine
-      console.log(srcImmagine); //Fai console.log per capire cosa restituisce ;)
-      $('.avatar').attr('src', srcImmagine); //Setto l'src su un'altra immagine :)
+      //Ottengo l'src dell'immagine
+      var srcImmagine = $('.selected img').attr('src');
+      //Setto l'src su un'altra immagine
+      $('.avatarTop').attr('src', srcImmagine);
+
+      // Se scrivo un msg, sarà inserito in quella chat e quella solamente;
 
 
 
