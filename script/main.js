@@ -85,8 +85,20 @@ $( document ).ready(function() {
 $(".utentelaterale").click(function () {
       $(".utentelaterale").removeClass("selected")
       $(this).addClass("selected")
-      $(".utenteselezionatotop").hide()
-   });
+      // $(".utenteselezionatotop").hide()
+    });
+
+   // trovare un modo per rendere dinamico il div con classe .utenteselezionatotop
+   // che ad ogni click cambia
+
+$(".utentelaterale").click(changeTab);
+
+function changeTab (){
+  var posizioneTab = $(".utenteselezionatotop img.active");
+  posizioneTab.removeClass("active");
+}
+
+
 
 
 
