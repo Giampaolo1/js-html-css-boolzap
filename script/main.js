@@ -1,4 +1,5 @@
 // Milestone 1
+
 // Replica della grafica con la possibilità di avere messaggi scritti dall’utente (verdi) e dall’interlocutore (bianco) assegnando due classi CSS diverse
 // Aggiunta di un messaggio: l’utente scrive un testo nella parte bassa e cliccando invia il testo viene aggiunto al thread sopra, come messaggio verde
 
@@ -32,7 +33,15 @@ $( document ).ready(function() {
     $(".message").val("");
 
 
-    // MILESTONE 2 // IDEA: // IDEA: // IDEA: // IDEA:
+    // MILESTONE 2 //
+
+    // STEP 1: Risposta dall’interlocutore: ad ogni inserimento di un messaggio,
+    // l’utente riceverà un “ok” come risposta,
+    // che apparirà dopo 1 secondo.
+
+    // STEP 2: Ricerca utenti: scrivendo qualcosa nell’input a sinistra,
+    // vengono visualizzati solo i contatti il cui nome contiene le lettere inserite
+    // (es, Marco, Matteo Martina -> Scrivo “mar” rimangono solo Marco e Martina)
 
 
     // RISPOSTA AUTOMATICA DEL PC
@@ -77,16 +86,22 @@ $( document ).ready(function() {
 
 
 // MILESTONE 3
-// sullo step 1 sarà da lasciare selezionato il contatto, la chat cambia, e cambiano anche le info dell’header della chat, e se scrivo un msg, sarà inserito in quella chat e quella solamente;
-// step 2, bisogna tenere conto che dovrò gestire eventi su elementi inseriti dinamicamente, quindi dovrò affidarmi all’event delegation: https://learn.jquery.com/events/event-delegation/, e poi facile ci sia anche la questione di risalire al padre da cancellare rispetto all’elemento interno che ha dato il comando di delete;
 
-// Scelgo la chat a sinistra
+// STEP 1 sarà da lasciare selezionato il contatto, la chat cambia, e cambiano anche le info
+// dell’header della chat, e se scrivo un msg, sarà inserito in quella chat e quella solamente;
+
+// STEP 2, bisogna tenere conto che dovrò gestire eventi su elementi inseriti dinamicamente,
+// quindi dovrò affidarmi all’event delegation: https://learn.jquery.com/events/event-delegation/,
+// e poi facile ci sia anche la questione di risalire al padre da cancellare rispetto
+// all’elemento interno che ha dato il comando di delete;
+
+// Scelgo la chat a sinistra e seleziono solo quella cliccata
 
 $(".utentelaterale").click(function() {
       $(".utentelaterale").removeClass("selected")
       $(this).addClass("selected")
 
-// provo a cambiare il nome on top
+      // cambiare il nome on top e l orario
 
       var cambioNome = $(".selected .nomeutespec").text();
       var cambioOrario = $(".selected .oraMsg").text();
@@ -95,6 +110,14 @@ $(".utentelaterale").click(function() {
       // $(".nomeutespectop").hide();
       $(".nomeutespectop").text(cambioNome)
       $(".oraMsgTop").text(cambioOrario)
+
+      // cambiare l immagineda on TOP
+
+      var srcImmagine = $('.avatarTop').attr('src'); //Ottengo l'src dell'immagine
+      console.log(srcImmagine); //Fai console.log per capire cosa restituisce ;)
+      $('.avatar4').attr('src', srcImmagine); //Setto l'src su un'altra immagine :)
+
+
 
 
 });
@@ -109,6 +132,10 @@ $(".utentelaterale").click(function() {
 //   posizioneTab.removeClass("active");
 // }
 
+// IDEA: Nik
+// var srcImmagine = $('selettoreimmagine').attr('src'); //Ottengo l'src dell'immagine
+// console.log(srcImmagine); //Fai console.log per capire cosa restituisce ;)
+// $('immaginedasostituire').attr('src', srcImmagine); //Setto l'src su un'altra immagine :)
 
 
 
@@ -121,12 +148,7 @@ $(".utentelaterale").click(function() {
 
 
 
-//   // Milestone 2
 
-// Risposta dall’interlocutore: ad ogni inserimento di un messaggio, l’utente riceverà un “ok” come risposta,
-// che apparirà dopo 1 secondo.
-
-// Ricerca utenti: scrivendo qualcosa nell’input a sinistra, vengono visualizzati solo i contatti il cui nome contiene le lettere inserite (es, Marco, Matteo Martina -> Scrivo “mar” rimangono solo Marco e Martina)
 
 
 
