@@ -88,13 +88,13 @@ $(".utentelaterale").click(function() {
 
 // provo a cambiare il nome on top
 
-      var prova = $(".selected .nomeutespec").text();
-      var prova2 = $(".selected .oraMsg").text();
+      var cambioNome = $(".selected .nomeutespec").text();
+      var cambioOrario = $(".selected .oraMsg").text();
 
       // console.log(prova);
       // $(".nomeutespectop").hide();
-      $(".nomeutespectop").text(prova)
-      $(".oraMsgTop").text(prova2)
+      $(".nomeutespectop").text(cambioNome)
+      $(".oraMsgTop").text(cambioOrario)
 
 
 });
