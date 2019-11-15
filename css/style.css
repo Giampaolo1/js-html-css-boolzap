@@ -174,7 +174,14 @@ main {
   overflow: auto;
   /* overflow-x: hidden; */
   background-image: url("../img/sfondochat.jpg");
+  display: none;
 }
+
+.selectedChat {
+  display: block !important;
+}
+
+
 
 
 /* TYPE MSG */

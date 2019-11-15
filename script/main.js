@@ -27,7 +27,7 @@ $( document ).ready(function() {
     // modifica questa copia di msgsent aggiungendogli il testo del messaggio:
     elementmsg.find('.msg').text(messaggio);
     // appendiamo una copia con testo valorizzato del div msgsent
-    $(".mainmessaggi").append(elementmsg);
+    $(".mainmessaggi.selectedChat").append(elementmsg);
 
     // miglior user experience, ripuliamo il contenuto riga x scrivere
     $(".message").val("");
@@ -54,7 +54,7 @@ $( document ).ready(function() {
       // modifica questa copia di msgreceived aggiungendogli "Ciao":
       elementmsg.find('.msg').text("Ok");
       // appendiamo una copia con testo valorizzato del div msgreceived
-      $(".mainmessaggi").append(elementmsg);
+      $(".mainmessaggi.selectedChat").append(elementmsg);
     }, 1000);
 
   });
@@ -126,6 +126,11 @@ $(".utentelaterale").click(function() {
       // $(".mainmessaggi.selected").removeClass("selected")
       // $("main[data-ref=" + clickedUtentelaterale +"]").addClass("selected");
       // $('.mainmessaggi .selected').attr('src', srcUtentelaterale);
+
+      var posizione = $(this).index();
+      console.log(posizione);
+      $(".mainmessaggi").removeClass("selectedChat");
+      $(".mainmessaggi").eq(posizione).addClass("selectedChat");
 
 
 
